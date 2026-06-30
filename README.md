@@ -22,22 +22,29 @@ Global Dyadic Gap + Non-Certified Tree Closure
 
 ## Code
 
-Main script:
+Main scripts:
 
 scripts/canonical_noncertified_shell_verification.py
 
-The script performs exact-integer finite-range verification for canonical non-certified shell elements.
+scripts/dyadic_gap_verification.py
+
+The first script performs exact-integer finite-range verification for canonical non-certified shell elements.
+
+The second script verifies the dyadic gap condition and checks the upper continued-fraction obstruction levels.
 
 Paper parameters:
 
 N = 10,000,000  
-L = 10,000
+L = 10,000  
+M_MAX = 100,000
 
 To run:
 
 python3 scripts/canonical_noncertified_shell_verification.py
 
-The script uses only the Python standard library.
+python3 scripts/dyadic_gap_verification.py
+
+Both scripts use only the Python standard library.
 
 ## Status
 
